@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+      "target": "es2016",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "sourceMap": true,
+      "declaration": false,
+      "outDir": "./dist/out-tsc",
+      "baseUrl": "./",
+      "strict": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "forceConsistentCasingInFileNames": true,
+      "lib": ["es2018", "dom"]
+    },
+    "angularCompilerOptions": {
+      "entryModule": "./src/app/app.module#AppModule",
+      "strictInjectionParameters": true,
+      "strictInjectionContext": true
+    },
+    "include": [
+      "src/**/*.d.ts",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "src/test.ts",
+      "src/**/*.spec.ts"
+    ]
+  }
+  

@@ -1,0 +1,25 @@
+<form [formGroup]="dataForm" (ngSubmit)="addData()">
+    <mat-form-field appearance="fill">
+      <mat-label>Date and Time</mat-label>
+      <input matInput type="datetime-local" formControlName="datetime">
+      <mat-error *ngIf="dataForm.get('datetime')?.hasError('required')">Date and Time is required</mat-error>
+      <mat-error *ngIf="dataForm.get('datetime')?.hasError('pastDate')">Date must be in the past</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Temperature</mat-label>
+      <input matInput type="number" formControlName="temperature">
+      <mat-error *ngIf="dataForm.get('temperature')?.hasError('required')">Temperature is required</mat-error>
+      <mat-error *ngIf="dataForm.get('temperature')?.hasError('min')">Temperature must be above -50°C</mat-error>
+      <mat-error *ngIf="dataForm.get('temperature')?.hasError('max')">Temperature must be below 50°C</mat-error>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">Add Data</button>
+  </form>
+  
+  <ul>
+    <li *ngFor="let entry of dataEntries">
+      {{ entry.datetime }} - {{ entry.temperature }}°C
+    </li>
+  </ul>
+  

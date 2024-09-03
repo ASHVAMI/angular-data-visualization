@@ -1,0 +1,5 @@
+
+<!-- Example in app.component.html or any component template -->
+<div class="background-container">
+  <img src="assets/images/background.jpg" alt="Background Image">
+</div>

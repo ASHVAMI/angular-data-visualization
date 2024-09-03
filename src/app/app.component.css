@@ -1,0 +1,51 @@
+/* General styles for the app */
+
+mat-tab-group {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style the tab headers */
+  .mat-tab-label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Style the form in Add Data tab */
+  app-add-data {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  mat-form-field {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  /* Style the list of entries */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Style the chart in View Data tab */
+  app-view-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 16px;
+  }
+  
+  canvas {
+    max-width: 100%;
+  }
+  

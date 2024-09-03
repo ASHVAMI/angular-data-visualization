@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  /* Tab Styles */
+  .mat-tab-group {
+    margin: 20px;
+  }
+  
+  .mat-tab-label {
+    font-weight: bold;
+  }
+  
+  .mat-tab-body {
+    padding: 20px;
+  }
+  
+  /* Form Styles */
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  mat-error {
+    color: #f44336;
+  }
+  
+  button.mat-raised-button {
+    margin-top: 10px;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Chart Styles */
+  #temperatureChart {
+    width: 100%;
+    height: 400px;
+  }
+  
